@@ -1,7 +1,7 @@
 "use client";
 import React, { useState } from "react";
 import Topic from "./_components/Topic";
-import VideoStyle from "./_components/videoStyle";
+import VideoStyle from "./_components/VideoStyle";
 
 function CreateNewVideo() {
   const [formData, setFormData] = useState();
