@@ -39,6 +39,7 @@ function VideoStyle({ onHandleInputChange }) {
       <h2>Video Style</h2>
       <p className="text-sm text-gray-400 mb-1">Select video style</p>
 
+      {/* Mapping the images */}
       <div className="grid grid-cols-2 lg:grid-cols-3 xl:grid-cols-5 gap-2 mt-1">
         {options.map((option, index) => (
           <div
