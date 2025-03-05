@@ -55,7 +55,16 @@ function AppSidebar() {
       <SidebarHeader>
         <div>
           <div className="flex items-center gap-3 w-full justify-center mt-5">
-            <Image src={"/logo.svg"} alt="logo" width={40} height={40} />
+            <Image
+              src="/logo.svg"
+              alt="logo"
+              width={40}
+              height={40}
+              onError={(e) => {
+                e.target.onerror = null;
+                e.target.src = "/fallback-logo.svg"; // Provide a fallback if needed
+              }}
+            />
             <h2 className="font-bold text-2xl">Auralis</h2>
           </div>
           <h2 className="text-lg text-gray-400 text-center mt-3">

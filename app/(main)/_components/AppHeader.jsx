@@ -9,7 +9,7 @@ function AppHeader() {
   return (
     <div className="p-3 flex justify-between items-center">
       <SidebarTrigger />
-      {user?.pictureURL && (
+      {user?.pictureURL && user.pictureURL !== "" && (
         <Image
           src={user.pictureURL}
           alt="userimg"
